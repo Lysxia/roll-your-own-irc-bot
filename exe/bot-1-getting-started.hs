@@ -13,8 +13,8 @@ myPort   = 6667 :: N.PortNumber
 main :: IO ()
 main = do
     h <- connectTo myServer myPort
-    hSetBuffering stdout NoBuffering
     t <- hGetContents h
+    hSetBuffering stdout NoBuffering
     print t
 
 -- Connect to a server given its name and port number
