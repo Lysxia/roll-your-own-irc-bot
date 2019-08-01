@@ -3,9 +3,11 @@
 import System.IO                      -- base
 import qualified Network.Socket as N  -- network
 
+-- Configuration options
 myServer = "irc.freenode.org" :: String
 myPort   = 6667 :: N.PortNumber
 
+-- Toplevel program
 main :: IO ()
 main = do
     h <- connectTo myServer myPort
@@ -13,8 +15,7 @@ main = do
     t <- hGetContents h
     print t
 
---
-
+-- Connect to a server given its name and port number
 connectTo :: N.HostName -> N.PortNumber -> IO Handle
 connectTo host port = do
     addr : _ <- N.getAddrInfo Nothing (Just host) (Just (show port))
