@@ -1,0 +1,66 @@
+name:                roll-your-own-irc-bot
+version:             0.1.0.0
+-- synopsis:
+-- description:
+homepage:            https://github.com/Lysxia/roll-your-own-irc-bot#readme
+license:             BSD3
+license-file:        LICENSE
+author:              Li-yao Xia
+maintainer:          lysxia@gmail.com
+copyright:           2019 Li-yao Xia
+category:            Web
+build-type:          Simple
+extra-source-files:  README.md
+cabal-version:       >=1.10
+
+executable bot-1
+  hs-source-dirs:      exe
+  main-is:             bot-1-getting-started.hs
+  build-depends:
+    network >= 2.7 && < 4,
+    base >= 4.7 && < 5
+  ghc-options: -Wall -Wno-missing-signatures
+  default-language:    Haskell2010
+
+executable bot-2
+  hs-source-dirs:      exe
+  main-is:             bot-2-talking-irc.hs
+  build-depends:
+    network >= 2.7 && < 4,
+    base >= 4.7 && < 5
+  ghc-options: -Wall -fno-warn-missing-signatures
+  default-language:    Haskell2010
+
+executable bot-3
+  hs-source-dirs:      exe
+  main-is:             bot-3-a-simple-interpreter.hs
+  build-depends:
+    network >= 2.7 && < 4,
+    base >= 4.7 && < 5
+  ghc-options: -Wall -fno-warn-missing-signatures
+  default-language:    Haskell2010
+
+executable bot-4
+  hs-source-dirs:      exe
+  main-is:             bot-4-roll-your-own-monad.hs
+  build-depends:
+    network >= 2.7 && < 4,
+    transformers,
+    base >= 4.7 && < 5
+  ghc-options: -Wall -fno-warn-missing-signatures
+  default-language:    Haskell2010
+
+executable bot-5
+  hs-source-dirs:      exe
+  main-is:             bot-5-extending-the-bot.hs
+  build-depends:
+    network >= 2.7 && < 4,
+    transformers,
+    time,
+    base >= 4.7 && < 5
+  ghc-options: -Wall -fno-warn-missing-signatures
+  default-language:    Haskell2010
+
+source-repository head
+  type:     git
+  location: https://github.com/Lysxia/roll-your-own-irc-bot
