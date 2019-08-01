@@ -1,5 +1,7 @@
 {-# OPTIONS_GHC -Wno-missing-signatures #-}
 
+{- First step: connecting to a server -}
+
 import System.IO                      -- base
 import qualified Network.Socket as N  -- network
 

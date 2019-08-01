@@ -1,5 +1,7 @@
 {-# OPTIONS_GHC -Wno-missing-signatures #-}
 
+{- Third step: interpreting commands -}
+
 import Data.List                      -- base
 import System.Exit                    --
 import System.IO                      --

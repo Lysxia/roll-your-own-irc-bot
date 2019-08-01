@@ -1,5 +1,7 @@
 {-# OPTIONS_GHC -Wno-missing-signatures #-}
 
+{- Fifth step: adding a new command -}
+
 import Control.Exception              -- base
 import Control.Monad.IO.Class         --
 import Data.List                      --

@@ -1,5 +1,7 @@
 {-# OPTIONS_GHC -Wno-missing-signatures #-}
 
+{- Second step: sending and receiving messages -}
+
 import System.IO                      -- base
 import qualified Network.Socket as N  -- network
 
