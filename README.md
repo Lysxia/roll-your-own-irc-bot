@@ -1,4 +1,4 @@
-Roll your own IRC bot (2019 version)
+Roll your own IRC bot (2024 version)
 ====================================
 
 Updated code for the tutorial on the Haskell Wiki, using current versions of
@@ -11,7 +11,7 @@ Build
 
 ```
 # If you use cabal
-cabal new-build
+cabal build
 
 # If you use stack
 stack build
@@ -24,7 +24,7 @@ Execute
 # Bot versions: bot-1, bot-2, bot-3, bot-4, bot-5
 
 # If you use cabal
-cabal new-exec bot-5
+cabal exec bot-5
 
 # If you use stack
 stack exec bot-5
@@ -52,12 +52,10 @@ On IRC:
 Command line output:
 
 ```
-Connecting to irc.freenode.org ...
-done.
 > NICK tutbot
 > USER tutbot 0 * :tutorial bot
 > JOIN #tutbot-testing
-:orwell.freenode.net NOTICE * :*** Looking up your hostname...
+:iridium.libera.chat NOTICE * :*** Checking Ident
 
 ... long welcome message ...
 

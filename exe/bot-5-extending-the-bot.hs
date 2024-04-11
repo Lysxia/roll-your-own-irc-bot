@@ -12,7 +12,7 @@ import Control.Monad.Trans.Reader     -- transformers
 import Data.Time                      -- time
 
 -- Configuration options
-myServer = "irc.freenode.org" :: String
+myServer = "irc.libera.chat" :: String
 myPort   = 6667 :: N.PortNumber
 myChan   = "#tutbot-testing" :: String
 myNick   = "tutbot" :: String

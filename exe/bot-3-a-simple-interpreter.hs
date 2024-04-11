@@ -8,7 +8,7 @@ import System.IO                      --
 import qualified Network.Socket as N  -- network
 
 -- Configuration options
-myServer = "irc.freenode.org" :: String
+myServer = "irc.libera.chat" :: String
 myPort   = 6667 :: N.PortNumber
 myChan   = "#tutbot-testing" :: String
 myNick   = "tutbot" :: String
